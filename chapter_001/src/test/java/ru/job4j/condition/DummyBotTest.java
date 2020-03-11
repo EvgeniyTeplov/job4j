@@ -22,7 +22,7 @@ public class DummyBotTest {
     @Test
     public void whenUnknownBot() {
         assertThat(
-                DummyBot.answer("Сколько будет 2+2?"),
+                DummyBot.answer("Сколько 11будет 2+2?"),
                 is ("Это ставит меня в тупик. Задайте другой вопрос.")
         );
     }
