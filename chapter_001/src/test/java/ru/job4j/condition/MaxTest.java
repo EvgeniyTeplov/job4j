@@ -10,4 +10,14 @@ public class MaxTest {
         int result = Max.max(0, 1);
         assertThat(result, is(1));
     }
+    @Test
+    public void NOMAX(){
+        int result = Max.max(1,1);
+        assertThat(result, is(1));
+    }
+    @Test
+    public void MaxToMax(){
+        int result = Max.max(10, 1);
+        assertThat(result, is(10));
+    }
 }
