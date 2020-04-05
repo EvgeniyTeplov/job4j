@@ -14,6 +14,14 @@ public class CounterTest {
         int expected = 30;
         assertThat(rsl, is(expected));
     }
+
+    @Test
+    public void whenSumEvenNumbersOneToEight() {
+        int rsl = Counter.sumByEven(1, 8);
+        int expected = 20;
+        assertThat(rsl, is(expected));
+    }
+
     @Test
     public void whenSumAllNumbersFromOneToTenThenFiftyFive() {
         int rsl = Counter.sum(1, 10);
