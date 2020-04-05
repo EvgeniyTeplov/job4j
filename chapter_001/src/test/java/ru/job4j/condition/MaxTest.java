@@ -11,7 +11,7 @@ public class MaxTest {
         assertThat(result, is(2));
     }
     @Test
-    public void NOMAX(){
+    public void whenMax2To2Then2(){
         int result = Max.max(2,2);
         assertThat(result, is(2));
     }
