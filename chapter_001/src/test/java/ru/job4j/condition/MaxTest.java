@@ -16,7 +16,7 @@ public class MaxTest {
         assertThat(result, is(2));
     }
     @Test
-    public void whenMax10To2Then1(){
+    public void whenMax10To2Then10(){
         int result = Max.max(10, 1);
         assertThat(result, is(10));
     }
