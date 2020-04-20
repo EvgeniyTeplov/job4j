@@ -4,10 +4,12 @@ public class ArrayChar {
 
     public static boolean startsWith(char[] word, char[] pref) {
         boolean result = true;
-        for (int i = 0; i < word.length && i <pref.length; i++) {
-              if (pref[i] == word[i]) {
+        for (int i = 0; i < pref.length; i++) {
+              if (pref[i] != word[i]) {
+                  result = false;
+                  break;
                 }
-                else { result = false; }
+
         }
         return result;
     }
